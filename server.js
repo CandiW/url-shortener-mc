@@ -54,13 +54,14 @@ app.get('/new/:url(*)',function(req,res){
    }
     
   }
+  
+});
+  }
 
   newLink(db,function(){
     db.close();
   });
-  
-});
-  }
+
 });
 });
 
@@ -79,8 +80,8 @@ app.get('/:shorturl', function (req, res, next) {
       function findLink(db, callback) {
 
         collection.findOne({"shorturl": params},{url: 1, _id: 0},function(err,doc){
-          if(doc !== null){
-            res.redirect(doc);
+          if(doc != null){
+            res.redirect(doc.url);
           }
           else {
             res.json({error: "No corresponding shortlink found."});
