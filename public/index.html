@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"> 
+<style>
+    body {
+        font-family: 'ABeeZee', sans-serif;
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px;
+        color: green;
+    }
+    h2 {
+        font-size: 25px;
+        color: navy;
+    }
+    h3 {
+        color: blueviolet;
+    }
+    p {
+        font-size: 15px;
+    }
+    #gray-background {
+        color: blue;
+        background-color: lightgray;
+    }
+</style>
+
+</head>
+
+<body>
+    <h1>Free Code Camp</h1>
+    <h2>URL Shortener Microservice</h2>
+
+    <p>
+        <h3>User stories:</h3>
+        <ul>
+            <p>1) I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</p><br>
+            <p>2) If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</p><br>
+            <p>3) When I visit that shortened URL, it will redirect me to my original link.</p><br>
+        </ul>
+    </p>
+<br>
+<div>
+    <h3>Example creation usage:</h3>
+    <code id="gray-background">
+        https://candiw-url-shortener.herokuapp.com/new/https://www.google.com
+        <br>
+        <br>
+        https://candiw-url-shortener.herokuapp.com/new/http://foo.com:80
+    </code>
+</div>
+
+<div>
+    <h3>Example creation output:</h3>
+    <code id="gray-background">
+        { "originalurl":"http://foo.com:80", "shorturl":"https://candiw-url-shortener.herokuapp.com/8170" }
+    </code>
+</div>
+
+<div>
+    <h3>Usage:</h3>
+    <code id="gray-background">
+        https://candiw-url-shortener.herokuapp.com/2871
+    </code>
+</div>
+
+<div>
+    <h3>Redirects to:</h3>
+    <code id="gray-background">
+        https://www.google.com/
+    </code>
+</div>
+<br>
+<br>
+
+</body>

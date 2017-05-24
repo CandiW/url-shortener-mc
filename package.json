@@ -1,0 +1,25 @@
+{
+  "name": "url-shortener-mc",
+  "version": "1.0.0",
+  "description": "project for free code camp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandiW/url-shortener-mc.git"
+  },
+  "author": "CandiW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandiW/url-shortener-mc/issues"
+  },
+  "homepage": "https://github.com/CandiW/url-shortener-mc#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.26",
+    "shortid": "^2.2.8",
+    "valid-url": "^1.0.9"
+  }
+}
