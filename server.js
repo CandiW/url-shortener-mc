@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/new/:url(*)',function(req,res){
-  let local = req.get('host'); + "/";
+  let local = req.get('host') + "/";
 
   MongoClient.connect(mLab,function(err,db){
   if(err){
@@ -35,7 +35,7 @@ app.get('/new/:url(*)',function(req,res){
 
   function newLink(db,callback){
 
-  collection.findOne({ "url": url }, { shorturl: 1, _id: 0 }, function (err, doc) {
+  collection.findOne({ "url": params }, { shorturl: 1, _id: 0 }, function (err, doc) {
     if (doc != null) {
       res.json({ originalurl: url, shorturl: local + doc.shorturl });
     }
