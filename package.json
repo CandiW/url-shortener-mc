@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CandiW/url-shortener-mc.git"
+    "url": "git+https://github.com/CandiW/url-shortener-microservice.git"
   },
   "author": "CandiW",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CandiW/url-shortener-mc/issues"
+    "url": "https://github.com/CandiW/url-shortener-microservice/issues"
   },
-  "homepage": "https://github.com/CandiW/url-shortener-mc#readme",
+  "homepage": "https://github.com/CandiW/url-shortener-microservice#readme",
   "dependencies": {
     "express": "^4.15.3",
     "mongodb": "^2.2.26",
