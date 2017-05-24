@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/new/:url(*)',function(req,res){
-  let local = req.get('host') + "/";
+  let local = req.get('host'); + "/";
 
   MongoClient.connect(mLab,function(err,db){
   if(err){
