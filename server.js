@@ -9,7 +9,7 @@ let app = express();
 
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
-let mLab = 'mongodb://' + config.db.host + '/' + config.db.name;
+let mLab = "mongodb://CandiW:jesus123@ds151941.mlab.com:51941/candiw-url-shortener"
 
 function myApp(port){
 app.use('/',express.static(path.join(__dirname,'/public')));
