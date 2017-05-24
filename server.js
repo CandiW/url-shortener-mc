@@ -3,13 +3,13 @@ const mongo = require('mongodb');
 const path = require('path');
 const shortid = require('shortid');
 const validUrl = require('valid-url');
-const config = require('./config.js');
 const MongoClient = mongo.MongoClient;
 let app = express();
 
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
 let mLab = "mongodb://CandiW:jesus123@ds151941.mlab.com:51941/candiw-url-shortener"
+//let mLab = "mongodb://localhost:3000/";
 
 function myApp(port){
 app.use('/',express.static(path.join(__dirname,'/public')));
