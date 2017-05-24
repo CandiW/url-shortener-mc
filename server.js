@@ -101,5 +101,5 @@ app.get('/:shorturl', function (req, res, next) {
 app.listen(port);
 
 }
-
-myApp(process.env.PORT || 3000);
+let myport = process.env.PORT || 3000;
+myApp(myport);
