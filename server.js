@@ -37,7 +37,7 @@ app.get('/new/:url(*)',function(req,res){
 
   collection.findOne({ "url": params }, { shorturl: 1, _id: 0 }, function (err, doc) {
     if (doc != null) {
-      res.json({ originalurl: url, shorturl: local + doc.shorturl });
+      res.json({ originalurl: params, shorturl: local + doc.shorturl });
     }
     else {
 
